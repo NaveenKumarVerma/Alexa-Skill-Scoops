@@ -12,7 +12,10 @@ newsDictionary = {
         'data': []
     }
 news_string = ''
-@app.route('/')
+# @app.route('/')
+# def homepage():
+#     return statement("hi there, how ya doin?")
+
 @ask.launch
 def start_skill():
     welcome_message = 'Welcome to ShortBuzz .................'
