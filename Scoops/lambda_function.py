@@ -13,9 +13,6 @@ newsDictionary = {
     }
 news_string = ''
 @app.route('/')
-def homepage():
-    return "hi there, how ya doin?"
-
 @ask.launch
 def start_skill():
     welcome_message = 'Welcome to ShortBuzz .................'
