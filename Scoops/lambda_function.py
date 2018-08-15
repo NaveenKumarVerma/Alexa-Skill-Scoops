@@ -16,7 +16,7 @@ news_string = ''
 def homepage():
     return "hi there, how ya doin?"
 
-@ask.launch
+# @ask.launch
 def start_skill():
     welcome_message = 'Welcome to ShortBuzz .................'
     next_message = 'here are top News....................'
@@ -77,9 +77,12 @@ def get_news_content():
 
 get_new_data()
 get_news_content()
+@ask.launch
 def speak_news():
     global news_string
-    return news_string
+    get_new_data()
+    get_news_content()
+    return statement(news_string)
 
 if __name__ == '__main__':
     app.run(debug=True)
