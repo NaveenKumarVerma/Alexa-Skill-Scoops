@@ -76,6 +76,7 @@ def get_news_content():
 
 get_new_data()
 get_news_content()
+@ask.intent("scoops")
 def speak_news():
     global news_string
     return news_string
