@@ -93,8 +93,8 @@ from flask_ask import Ask, statement, question, session
 import json
 import requests
 import time
-import unidecode
-import pygame
+# import unidecode
+# import pygame
 import requests
 from bs4 import BeautifulSoup
 
@@ -288,9 +288,9 @@ def science_category_intent():
 def no_intent():
     # bye_text = 'I am not sure what you disliked about me... well it was nice meeting you bye'
     # return statement(bye_text)
-    pygame.mixer.init()
-    pygame.mixer.music.load("oh_man.wav")
-    pygame.mixer.music.play()
-    return statement("  ")
+    # pygame.mixer.init()
+    # pygame.mixer.music.load("oh_man.wav")
+    # pygame.mixer.music.play()
+    return statement("bye")
 if __name__ == '__main__':
     app.run(debug=True)
