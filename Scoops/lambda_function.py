@@ -73,7 +73,7 @@ def start_skill():
     global news_string
     get_new_data()
     get_news_content()
-    welcome_message = 'Welcome to ShortBuzz .................'
+    welcome_message = 'Welcome to Scoops .................'
     next_message = 'here are top News....................'
 
     return statement(welcome_message + next_message + news_string )
