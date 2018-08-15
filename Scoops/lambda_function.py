@@ -21,7 +21,8 @@ def start_skill():
     welcome_message = 'Welcome to ShortBuzz .................'
     next_message = 'here are top News....................'
 
-    return statement(welcome_message + next_message + speak_news() )
+    return statement(welcome_message + next_message )
+        # + speak_news() )
 
 def get_new_data():
     global newsDictionary
