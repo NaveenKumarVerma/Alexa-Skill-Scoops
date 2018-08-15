@@ -16,13 +16,12 @@ news_string = ''
 def homepage():
     return "hi there, how ya doin?"
 
-# @ask.launch
+@ask.launch
 def start_skill():
     welcome_message = 'Welcome to ShortBuzz .................'
     next_message = 'here are top News....................'
 
-    return statement(welcome_message + next_message )
-        # + speak_news() )
+    return statement(welcome_message + next_message + speak_news() )
 
 def get_new_data():
     global newsDictionary
@@ -75,9 +74,6 @@ def get_news_content():
     else:
         news_string = 'Sorry ......... i am facing some technical issue......... please try again after some time'
 
-get_new_data()
-get_news_content()
-@ask.launch
 def speak_news():
     global news_string
     get_new_data()
